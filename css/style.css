@@ -1,0 +1,78 @@
+body {
+  background: #1a78b9;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/19/4a/c8/194ac87561ca7146121e88111a305184.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.datadiv {
+  background-color: #986568;
+  text-align: center;
+  width: 80%;
+  height: 600px;
+}
+
+#weatherbtn {
+  margin-top: 5px;
+}
+
+#apidiv {
+  border: 15px dotted #fff;
+  border-left: 15px solid;
+  border-bottom: 20px solid;
+  border-radius: 10%;
+  margin: 5px auto;
+  font-size: 35px;
+  color: white;
+  background: rgba(171, 205, 239, 0.6);
+  font-family: 'Pangolin', cursive;
+}
+
+#gloc {
+  margin-top: 5px;
+}
+
+#winfo {
+  font-size: 20px;
+}
+
+#wImage {
+  width: 100px;
+  height: 100px;
+}
+
+#btnset1 {
+  display: inline-block;
+}
+
+#convert {
+  text-align: center;
+}
+
+#WeatherInfo {
+  font-size: 25px;
+  color: #ddd;
+}
+
+#btnset1 {
+  margin: 5px 45%;
+}
+
+#win {
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+
+#givecolor {
+  font-weight: 900;
+  font-size: 40px;
+  color: #0000ff;
+}
+
+#innerdiv {
+  border: 1px solid #df;
+  margin: 5px 32%;
+  width: -50%;
+  height: 100px;
+}
