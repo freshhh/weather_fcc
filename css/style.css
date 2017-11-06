@@ -4,14 +4,17 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 100vh;
+  margin-bottom: 0;
 }
 
 .datadiv {
   background-color: #986568;
   text-align: center;
-  width: 80%;
-  height: 600px;
-}
+  width: 60%;
+  height: 70%;
+  
+  }
 
 #weatherbtn {
   margin-top: 5px;

@@ -45,13 +45,16 @@ function getF(apidata) {
 
   return Math.floor(f);
 }
-var Changed = true;
+var Changed = false;
 var temp;
 
 //Changes K to C and vice versa.
 function toggle1() {
+	//Update Nov, 6 2017 
+	//put "temp" definition outside as to cut delay when conversion is needed.
+	temp = getC(apiInfo);
   if (Changed) {
-     temp = getC(apiInfo);
+     //temp = getC(apiInfo);
     $("#win").html("<p id='win'>Current Temp: " + temp + " °C </p>");
     Changed = false;
   } else if (!Changed) {
@@ -94,7 +97,7 @@ $(document).ready(function() {
       iconnum = data.weather[0].icon;
       var iconlink = "http://openweathermap.org/img/w/" + iconnum + ".png";
       $("#apidiv").html(" ");
-      $("#apidiv").prepend("<p id='givecolor' >FRESHH WEATHEROMETER V1.2</p><p><h2>" + data.name + ", " + countryname + " is experiencing " + data.weather[0].description + " at the momment.</h2></p><br><div id ='innerdiv'><marquee scrollamount='11'><img    id=\"wImage\" src=\" " + iconlink + "\" ></img></marquee></div><br>" + "<p id='win' onclick='toggle1()'>Current Temp: " + getC(apiInfo) + " °C </p><p id='win2'></p><br><h6>*Click on Temperature to change unit*");
+      $("#apidiv").prepend("<p id='givecolor' >FRESHH WEATHEROMETER V1.2</p><p><h2>" + data.name + ", " + countryname + " is experiencing " + data.weather[0].description + " at the momment.</h2></p><br><div id ='innerdiv'><marquee scrollamount='6'><img    id=\"wImage\" src=\" " + iconlink + "\" ></img></marquee></div><br>" + "<p id='win' onclick='toggle1()'>Current Temp: " + getC(apiInfo) + " °C </p><p id='win2'></p><br><h6>*Click on Temperature to change unit*");
 
       console.log(countryname);
       console.log(apiInfo.wind['speed']);
